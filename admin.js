@@ -1,3 +1,38 @@
+// Add this debugging code at the very top of your admin.js file
+console.log("Admin.js loaded");
+console.log("Checking Firebase connectivity...");
+
+// Test Firebase connection when page loads
+window.addEventListener('load', function() {
+  if (typeof firebase !== 'undefined' && firebase.app) {
+    console.log("Firebase SDK loaded successfully");
+    
+    if (typeof db !== 'undefined') {
+      console.log("Firestore instance available");
+      
+      // Test write operation
+      db.collection('test_connection').add({
+        test: true,
+        timestamp: new Date()
+      })
+      .then(function(docRef) {
+        console.log("Firebase write successful! Document ID:", docRef.id);
+        console.log("Your Firebase connection is working correctly");
+      })
+      .catch(function(error) {
+        console.error("Firebase write failed:", error);
+        console.error("This indicates a problem with your Firebase setup");
+      });
+    } else {
+      console.error("ERROR: Firestore db instance not available");
+      console.error("Make sure firebase-config.js is loaded and initializes db");
+    }
+  } else {
+    console.error("ERROR: Firebase SDK not loaded");
+    console.error("Check that Firebase script tags are included and loading correctly");
+  }
+});
+
 // Initialize admin functionality when the page is loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Load all blog posts with admin controls
