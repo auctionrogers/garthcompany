@@ -1,0 +1,14 @@
+[
+    {
+      "id": "1",
+      "title": "Welcome to The Garth Company Blog",
+      "date": "2025-03-14T12:00:00Z",
+      "content": "<p>Welcome to our new blog! We're excited to share updates about The Garth Company and our journey.</p><p>This blog will be a space where we share our thoughts, announcements, and industry insights. We believe in transparency and want to keep our community informed about what we're working on.</p><p>Stay tuned for more posts coming soon!</p>"
+    },
+    {
+      "id": "2",
+      "title": "Our Mission and Vision",
+      "date": "2025-03-12T15:30:00Z",
+      "content": "<p>At The Garth Company, our mission is simple: to create innovative solutions that make a difference.</p><p>We believe in building products that solve real problems, focusing on quality and user experience above all else. Our team is dedicated to continuous improvement and learning.</p><p>As we grow, we remain committed to our core values:</p><ul><li>Put customers first</li><li>Embrace innovation</li><li>Foster collaboration</li><li>Maintain integrity in all we do</li></ul><p>We're excited about the future and can't wait to share our journey with you!</p>"
+    }
+  ]
